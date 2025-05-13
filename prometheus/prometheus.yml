@@ -15,6 +15,7 @@ scrape_configs:
     static_configs:
       - targets: ['node_exporter:9100']
 
+# Uncomment the following lines to enable scraping from a remote server
 # scrape_configs:
 #   - job_name: prometheus
 #     honor_timestamps: true
