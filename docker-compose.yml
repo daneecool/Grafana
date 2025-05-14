@@ -3,10 +3,12 @@ services:
     image: grafana/grafana
     container_name: grafana
     restart: unless-stopped
-    ports:
-      - '3000:3000'
+    # ports:
+    #   - '3000:3000'
+    network_mode: host
     volumes:
       - grafana-storage:/var/lib/grafana
+      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
     environment:
       - GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource
       # - GF_SERVER_ROOT_URL=https://skippercolt93.duckdns.org
