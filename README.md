@@ -26,3 +26,5 @@ Add a cron job to renew SSL every month:
   -v /path/to/certbot/conf:/etc/letsencrypt \
   certbot/certbot renew --webroot -w /var/www/certbot && docker restart nginx
 ```
+
+## Weather and Disaster Forecast
