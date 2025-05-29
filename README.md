@@ -30,3 +30,4 @@ Add a cron job to renew SSL every month:
 ## Weather and Disaster Forecast
 - typhoon Ver.1
 - earthquake Ver.1
+- air quality Ver.1
